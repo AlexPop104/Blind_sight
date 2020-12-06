@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/rule:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f CMakeFiles/Makefile2 pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/rule
+.PHONY : pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/rule
+
+# Convenience name for target.
+passthrough_filter_node_zoom: pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/rule
+
+.PHONY : passthrough_filter_node_zoom
+
+# fast build rule for target.
+passthrough_filter_node_zoom/fast:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/build.make pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/build
+.PHONY : passthrough_filter_node_zoom/fast
+
+# Convenience name for target.
 pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule:
 	cd /home/alex/Blind_sight/build && $(MAKE) -f CMakeFiles/Makefile2 pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule
 .PHONY : pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule
@@ -839,6 +854,33 @@ src/passthrough_filter_node.cpp.s:
 	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/passthrough_filter_node.dir/build.make pcl_tutorial/CMakeFiles/passthrough_filter_node.dir/src/passthrough_filter_node.cpp.s
 .PHONY : src/passthrough_filter_node.cpp.s
 
+src/passthrough_filter_node_zoom.o: src/passthrough_filter_node_zoom.cpp.o
+
+.PHONY : src/passthrough_filter_node_zoom.o
+
+# target to build an object file
+src/passthrough_filter_node_zoom.cpp.o:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/build.make pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/src/passthrough_filter_node_zoom.cpp.o
+.PHONY : src/passthrough_filter_node_zoom.cpp.o
+
+src/passthrough_filter_node_zoom.i: src/passthrough_filter_node_zoom.cpp.i
+
+.PHONY : src/passthrough_filter_node_zoom.i
+
+# target to preprocess a source file
+src/passthrough_filter_node_zoom.cpp.i:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/build.make pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/src/passthrough_filter_node_zoom.cpp.i
+.PHONY : src/passthrough_filter_node_zoom.cpp.i
+
+src/passthrough_filter_node_zoom.s: src/passthrough_filter_node_zoom.cpp.s
+
+.PHONY : src/passthrough_filter_node_zoom.s
+
+# target to generate assembly for a file
+src/passthrough_filter_node_zoom.cpp.s:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/build.make pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/src/passthrough_filter_node_zoom.cpp.s
+.PHONY : src/passthrough_filter_node_zoom.cpp.s
+
 src/plane_segmentation_node.o: src/plane_segmentation_node.cpp.o
 
 .PHONY : src/plane_segmentation_node.o
@@ -955,6 +997,7 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... edit_cache"
+	@echo "... passthrough_filter_node_zoom"
 	@echo "... zoom_in_node"
 	@echo "... trianglemesh_node"
 	@echo "... list_install_components"
@@ -1006,6 +1049,9 @@ help:
 	@echo "... src/passthrough_filter_node.o"
 	@echo "... src/passthrough_filter_node.i"
 	@echo "... src/passthrough_filter_node.s"
+	@echo "... src/passthrough_filter_node_zoom.o"
+	@echo "... src/passthrough_filter_node_zoom.i"
+	@echo "... src/passthrough_filter_node_zoom.s"
 	@echo "... src/plane_segmentation_node.o"
 	@echo "... src/plane_segmentation_node.i"
 	@echo "... src/plane_segmentation_node.s"

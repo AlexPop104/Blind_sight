@@ -120,6 +120,7 @@
 /home/alex/Blind_sight/build/openni2/openni2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir
 /home/alex/Blind_sight/build/pcl_tutorial/CMakeFiles/install.dir
 /home/alex/Blind_sight/build/pcl_tutorial/CMakeFiles/edit_cache.dir
+/home/alex/Blind_sight/build/pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir
 /home/alex/Blind_sight/build/pcl_tutorial/CMakeFiles/zoom_in_node.dir
 /home/alex/Blind_sight/build/pcl_tutorial/CMakeFiles/trianglemesh_node.dir
 /home/alex/Blind_sight/build/pcl_tutorial/CMakeFiles/list_install_components.dir

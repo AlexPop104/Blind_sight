@@ -7,10 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/alex/Blind_sight/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/alex/Blind_sight/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/alex/Blind_sight/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/alex/Blind_sight/build'
-export PYTHONPATH="/home/alex/Blind_sight/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/alex/Blind_sight/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/alex/Blind_sight/src:$ROS_PACKAGE_PATH"

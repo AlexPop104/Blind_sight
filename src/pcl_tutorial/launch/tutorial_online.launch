@@ -19,6 +19,9 @@
 <node pkg="pcl_tutorial" type="zoom_in_node" name="zoom_in_node" output="screen" >
 </node>
 
+<node pkg="pcl_tutorial" type="passthrough_filter_node_zoom" name="passthrough_filter_node_zoom" output="screen" >
+</node>
+
  <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find pcl_tutorial)/cfg/rviz.rviz"/>
 
  <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" output="screen" />

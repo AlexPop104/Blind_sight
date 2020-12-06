@@ -61,6 +61,8 @@ pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/includ
 pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/plane_segmentation_nodeConfig.py
 pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h
 pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/zoom_in_nodeConfig.py
+pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h
+pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/passthrough_filter_node_zoomConfig.py
 
 
 /home/alex/Blind_sight/devel/include/pcl_tutorial/voxel_filter_nodeConfig.h: /home/alex/Blind_sight/src/pcl_tutorial/cfg/voxel_filter_node.cfg
@@ -135,6 +137,24 @@ pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/py
 /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig.wikidoc: /home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig.wikidoc
 
+/home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h: /home/alex/Blind_sight/src/pcl_tutorial/cfg/passthrough_filter_node_zoom.cfg
+/home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alex/Blind_sight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating dynamic reconfigure files from cfg/passthrough_filter_node_zoom.cfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/passthrough_filter_node_zoomConfig.py"
+	cd /home/alex/Blind_sight/build/pcl_tutorial && ../catkin_generated/env_cached.sh /home/alex/Blind_sight/build/pcl_tutorial/setup_custom_pythonpath.sh /home/alex/Blind_sight/src/pcl_tutorial/cfg/passthrough_filter_node_zoom.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/alex/Blind_sight/devel/share/pcl_tutorial /home/alex/Blind_sight/devel/include/pcl_tutorial /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial
+
+/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig.dox: /home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig.dox
+
+/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig-usage.dox: /home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig-usage.dox
+
+/home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/passthrough_filter_node_zoomConfig.py: /home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/passthrough_filter_node_zoomConfig.py
+
+/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig.wikidoc: /home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig.wikidoc
+
 pcl_tutorial_gencfg: pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg
 pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/voxel_filter_nodeConfig.h
 pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/voxel_filter_nodeConfig.dox
@@ -156,6 +176,11 @@ pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_i
 pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig-usage.dox
 pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/zoom_in_nodeConfig.py
 pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig.wikidoc
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig.dox
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig-usage.dox
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/passthrough_filter_node_zoomConfig.py
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig.wikidoc
 pcl_tutorial_gencfg: pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg.dir/build.make
 
 .PHONY : pcl_tutorial_gencfg

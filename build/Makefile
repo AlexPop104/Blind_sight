@@ -1182,6 +1182,19 @@ nodelet_generate_messages_nodejs/fast:
 .PHONY : nodelet_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named passthrough_filter_node_zoom
+
+# Build rule for target.
+passthrough_filter_node_zoom: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 passthrough_filter_node_zoom
+.PHONY : passthrough_filter_node_zoom
+
+# fast build rule for target.
+passthrough_filter_node_zoom/fast:
+	$(MAKE) -f pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/build.make pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/build
+.PHONY : passthrough_filter_node_zoom/fast
+
+#=============================================================================
 # Target rules for targets named zoom_in_node
 
 # Build rule for target.
@@ -2013,6 +2026,7 @@ help:
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... nodelet_generate_messages_eus"
 	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... passthrough_filter_node_zoom"
 	@echo "... zoom_in_node"
 	@echo "... trianglemesh_node"
 	@echo "... pcl_tutorial_gencfg"
