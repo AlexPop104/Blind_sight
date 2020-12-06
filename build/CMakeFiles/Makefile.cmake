@@ -413,6 +413,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "openni2/openni2_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/DependInfo.cmake"
   "openni2/openni2_camera/CMakeFiles/nodelet_generate_messages_eus.dir/DependInfo.cmake"
   "openni2/openni2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/DependInfo.cmake"
+  "pcl_tutorial/CMakeFiles/zoom_in_node.dir/DependInfo.cmake"
   "pcl_tutorial/CMakeFiles/trianglemesh_node.dir/DependInfo.cmake"
   "pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg.dir/DependInfo.cmake"
   "pcl_tutorial/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake"

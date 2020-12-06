@@ -95,7 +95,7 @@ generate_dynamic_reconfigure_options(
   cfg/voxel_filter_node.cfg
   cfg/passthrough_filter_node.cfg
   cfg/plane_segmentation_node.cfg
-  cfg/compute_volume_node.cfg
+  cfg/zoom_in_node.cfg
 )
 
 
@@ -154,18 +154,21 @@ add_executable(voxel_filter_node src/voxel_filter_node.cpp)
 add_executable(passthrough_filter_node src/passthrough_filter_node.cpp)
 add_executable(plane_segmentation_node src/plane_segmentation_node.cpp)
 add_executable(trianglemesh_node src/trianglemesh_node.cpp)
-
+add_executable(zoom_in_node src/zoom_in_node.cpp)
 
 target_link_libraries(voxel_filter_node ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 target_link_libraries(passthrough_filter_node ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 target_link_libraries(plane_segmentation_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${PCL_LIBRARIES})
 target_link_libraries(trianglemesh_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${PCL_LIBRARIES})
+target_link_libraries(zoom_in_node ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${PCL_LIBRARIES})
 
 
 add_dependencies(voxel_filter_node ${PROJECT_NAME}_gencfg)
 add_dependencies(passthrough_filter_node ${PROJECT_NAME}_gencfg)
 add_dependencies(plane_segmentation_node ${PROJECT_NAME}_gencfg)
 add_dependencies(trianglemesh_node ${PROJECT_NAME}_gencfg)
+add_dependencies(zoom_in_node ${PROJECT_NAME}_gencfg)
+
 
 
 

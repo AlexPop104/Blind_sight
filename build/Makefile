@@ -1182,6 +1182,19 @@ nodelet_generate_messages_nodejs/fast:
 .PHONY : nodelet_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named zoom_in_node
+
+# Build rule for target.
+zoom_in_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 zoom_in_node
+.PHONY : zoom_in_node
+
+# fast build rule for target.
+zoom_in_node/fast:
+	$(MAKE) -f pcl_tutorial/CMakeFiles/zoom_in_node.dir/build.make pcl_tutorial/CMakeFiles/zoom_in_node.dir/build
+.PHONY : zoom_in_node/fast
+
+#=============================================================================
 # Target rules for targets named trianglemesh_node
 
 # Build rule for target.
@@ -2000,6 +2013,7 @@ help:
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... nodelet_generate_messages_eus"
 	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... zoom_in_node"
 	@echo "... trianglemesh_node"
 	@echo "... pcl_tutorial_gencfg"
 	@echo "... std_srvs_generate_messages_py"

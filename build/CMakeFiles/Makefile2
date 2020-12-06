@@ -2784,6 +2784,7 @@ clean: openni2/openni2_camera/CMakeFiles/nodelet_generate_messages_nodejs.dir/cl
 # Directory level rules for directory pcl_tutorial
 
 # Convenience name for "all" pass in the directory.
+pcl_tutorial/all: pcl_tutorial/CMakeFiles/zoom_in_node.dir/all
 pcl_tutorial/all: pcl_tutorial/CMakeFiles/trianglemesh_node.dir/all
 pcl_tutorial/all: pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg.dir/all
 pcl_tutorial/all: pcl_tutorial/CMakeFiles/passthrough_filter_node.dir/all
@@ -2793,6 +2794,7 @@ pcl_tutorial/all: pcl_tutorial/CMakeFiles/voxel_filter_node.dir/all
 .PHONY : pcl_tutorial/all
 
 # Convenience name for "clean" pass in the directory.
+pcl_tutorial/clean: pcl_tutorial/CMakeFiles/zoom_in_node.dir/clean
 pcl_tutorial/clean: pcl_tutorial/CMakeFiles/trianglemesh_node.dir/clean
 pcl_tutorial/clean: pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg.dir/clean
 pcl_tutorial/clean: pcl_tutorial/CMakeFiles/std_srvs_generate_messages_py.dir/clean
@@ -2842,6 +2844,43 @@ pcl_tutorial/clean: pcl_tutorial/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/
 pcl_tutorial/preinstall:
 
 .PHONY : pcl_tutorial/preinstall
+
+#=============================================================================
+# Target rules for target pcl_tutorial/CMakeFiles/zoom_in_node.dir
+
+# All Build rule for target.
+pcl_tutorial/CMakeFiles/zoom_in_node.dir/all: pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg.dir/all
+	$(MAKE) -f pcl_tutorial/CMakeFiles/zoom_in_node.dir/build.make pcl_tutorial/CMakeFiles/zoom_in_node.dir/depend
+	$(MAKE) -f pcl_tutorial/CMakeFiles/zoom_in_node.dir/build.make pcl_tutorial/CMakeFiles/zoom_in_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alex/Blind_sight/build/CMakeFiles --progress-num=60,61 "Built target zoom_in_node"
+.PHONY : pcl_tutorial/CMakeFiles/zoom_in_node.dir/all
+
+# Include target in all.
+all: pcl_tutorial/CMakeFiles/zoom_in_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Blind_sight/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_tutorial/CMakeFiles/zoom_in_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Blind_sight/build/CMakeFiles 0
+.PHONY : pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule
+
+# Convenience name for target.
+zoom_in_node: pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule
+
+.PHONY : zoom_in_node
+
+# clean rule for target.
+pcl_tutorial/CMakeFiles/zoom_in_node.dir/clean:
+	$(MAKE) -f pcl_tutorial/CMakeFiles/zoom_in_node.dir/build.make pcl_tutorial/CMakeFiles/zoom_in_node.dir/clean
+.PHONY : pcl_tutorial/CMakeFiles/zoom_in_node.dir/clean
+
+# clean rule for target.
+clean: pcl_tutorial/CMakeFiles/zoom_in_node.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target pcl_tutorial/CMakeFiles/trianglemesh_node.dir

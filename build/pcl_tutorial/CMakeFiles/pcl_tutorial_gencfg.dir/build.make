@@ -59,8 +59,8 @@ pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/includ
 pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/passthrough_filter_nodeConfig.py
 pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/plane_segmentation_nodeConfig.h
 pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/plane_segmentation_nodeConfig.py
-pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h
-pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/compute_volume_nodeConfig.py
+pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h
+pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/zoom_in_nodeConfig.py
 
 
 /home/alex/Blind_sight/devel/include/pcl_tutorial/voxel_filter_nodeConfig.h: /home/alex/Blind_sight/src/pcl_tutorial/cfg/voxel_filter_node.cfg
@@ -117,23 +117,23 @@ pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/py
 /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/plane_segmentation_nodeConfig.wikidoc: /home/alex/Blind_sight/devel/include/pcl_tutorial/plane_segmentation_nodeConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/plane_segmentation_nodeConfig.wikidoc
 
-/home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h: /home/alex/Blind_sight/src/pcl_tutorial/cfg/compute_volume_node.cfg
-/home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alex/Blind_sight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating dynamic reconfigure files from cfg/compute_volume_node.cfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/compute_volume_nodeConfig.py"
-	cd /home/alex/Blind_sight/build/pcl_tutorial && ../catkin_generated/env_cached.sh /home/alex/Blind_sight/build/pcl_tutorial/setup_custom_pythonpath.sh /home/alex/Blind_sight/src/pcl_tutorial/cfg/compute_volume_node.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/alex/Blind_sight/devel/share/pcl_tutorial /home/alex/Blind_sight/devel/include/pcl_tutorial /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial
+/home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h: /home/alex/Blind_sight/src/pcl_tutorial/cfg/zoom_in_node.cfg
+/home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alex/Blind_sight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating dynamic reconfigure files from cfg/zoom_in_node.cfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/zoom_in_nodeConfig.py"
+	cd /home/alex/Blind_sight/build/pcl_tutorial && ../catkin_generated/env_cached.sh /home/alex/Blind_sight/build/pcl_tutorial/setup_custom_pythonpath.sh /home/alex/Blind_sight/src/pcl_tutorial/cfg/zoom_in_node.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/alex/Blind_sight/devel/share/pcl_tutorial /home/alex/Blind_sight/devel/include/pcl_tutorial /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial
 
-/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/compute_volume_nodeConfig.dox: /home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/compute_volume_nodeConfig.dox
+/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig.dox: /home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig.dox
 
-/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/compute_volume_nodeConfig-usage.dox: /home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/compute_volume_nodeConfig-usage.dox
+/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig-usage.dox: /home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig-usage.dox
 
-/home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/compute_volume_nodeConfig.py: /home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/compute_volume_nodeConfig.py
+/home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/zoom_in_nodeConfig.py: /home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/zoom_in_nodeConfig.py
 
-/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/compute_volume_nodeConfig.wikidoc: /home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/compute_volume_nodeConfig.wikidoc
+/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig.wikidoc: /home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig.wikidoc
 
 pcl_tutorial_gencfg: pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg
 pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/voxel_filter_nodeConfig.h
@@ -151,11 +151,11 @@ pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/plane_
 pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/plane_segmentation_nodeConfig-usage.dox
 pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/plane_segmentation_nodeConfig.py
 pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/plane_segmentation_nodeConfig.wikidoc
-pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h
-pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/compute_volume_nodeConfig.dox
-pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/compute_volume_nodeConfig-usage.dox
-pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/compute_volume_nodeConfig.py
-pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/compute_volume_nodeConfig.wikidoc
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/include/pcl_tutorial/zoom_in_nodeConfig.h
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig.dox
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig-usage.dox
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/zoom_in_nodeConfig.py
+pcl_tutorial_gencfg: /home/alex/Blind_sight/devel/share/pcl_tutorial/docs/zoom_in_nodeConfig.wikidoc
 pcl_tutorial_gencfg: pcl_tutorial/CMakeFiles/pcl_tutorial_gencfg.dir/build.make
 
 .PHONY : pcl_tutorial_gencfg

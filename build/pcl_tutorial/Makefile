@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f CMakeFiles/Makefile2 pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule
+.PHONY : pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule
+
+# Convenience name for target.
+zoom_in_node: pcl_tutorial/CMakeFiles/zoom_in_node.dir/rule
+
+.PHONY : zoom_in_node
+
+# fast build rule for target.
+zoom_in_node/fast:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/zoom_in_node.dir/build.make pcl_tutorial/CMakeFiles/zoom_in_node.dir/build
+.PHONY : zoom_in_node/fast
+
+# Convenience name for target.
 pcl_tutorial/CMakeFiles/trianglemesh_node.dir/rule:
 	cd /home/alex/Blind_sight/build && $(MAKE) -f CMakeFiles/Makefile2 pcl_tutorial/CMakeFiles/trianglemesh_node.dir/rule
 .PHONY : pcl_tutorial/CMakeFiles/trianglemesh_node.dir/rule
@@ -905,6 +920,33 @@ src/voxel_filter_node.cpp.s:
 	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/voxel_filter_node.dir/build.make pcl_tutorial/CMakeFiles/voxel_filter_node.dir/src/voxel_filter_node.cpp.s
 .PHONY : src/voxel_filter_node.cpp.s
 
+src/zoom_in_node.o: src/zoom_in_node.cpp.o
+
+.PHONY : src/zoom_in_node.o
+
+# target to build an object file
+src/zoom_in_node.cpp.o:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/zoom_in_node.dir/build.make pcl_tutorial/CMakeFiles/zoom_in_node.dir/src/zoom_in_node.cpp.o
+.PHONY : src/zoom_in_node.cpp.o
+
+src/zoom_in_node.i: src/zoom_in_node.cpp.i
+
+.PHONY : src/zoom_in_node.i
+
+# target to preprocess a source file
+src/zoom_in_node.cpp.i:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/zoom_in_node.dir/build.make pcl_tutorial/CMakeFiles/zoom_in_node.dir/src/zoom_in_node.cpp.i
+.PHONY : src/zoom_in_node.cpp.i
+
+src/zoom_in_node.s: src/zoom_in_node.cpp.s
+
+.PHONY : src/zoom_in_node.s
+
+# target to generate assembly for a file
+src/zoom_in_node.cpp.s:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/zoom_in_node.dir/build.make pcl_tutorial/CMakeFiles/zoom_in_node.dir/src/zoom_in_node.cpp.s
+.PHONY : src/zoom_in_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -913,6 +955,7 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... edit_cache"
+	@echo "... zoom_in_node"
 	@echo "... trianglemesh_node"
 	@echo "... list_install_components"
 	@echo "... pcl_tutorial_gencfg"
@@ -972,6 +1015,9 @@ help:
 	@echo "... src/voxel_filter_node.o"
 	@echo "... src/voxel_filter_node.i"
 	@echo "... src/voxel_filter_node.s"
+	@echo "... src/zoom_in_node.o"
+	@echo "... src/zoom_in_node.i"
+	@echo "... src/zoom_in_node.s"
 .PHONY : help
 
 
