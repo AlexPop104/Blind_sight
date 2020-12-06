@@ -23,6 +23,8 @@
 <node pkg="pcl_tutorial" type="passthrough_filter_node_zoom" name="passthrough_filter_node_zoom" output="screen" >
 </node>
 
+<node pkg="pcl_tutorial" type="controlling_point_node" name="controlling_point_node" output="screen" >
+</node>
 
  <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find pcl_tutorial)/cfg/rviz.rviz"/>
 

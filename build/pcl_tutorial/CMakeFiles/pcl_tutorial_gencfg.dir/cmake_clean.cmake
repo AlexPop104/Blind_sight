@@ -25,6 +25,11 @@ file(REMOVE_RECURSE
   "/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig-usage.dox"
   "/home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/passthrough_filter_node_zoomConfig.py"
   "/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/passthrough_filter_node_zoomConfig.wikidoc"
+  "/home/alex/Blind_sight/devel/include/pcl_tutorial/controlling_point_nodeConfig.h"
+  "/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/controlling_point_nodeConfig.dox"
+  "/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/controlling_point_nodeConfig-usage.dox"
+  "/home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/cfg/controlling_point_nodeConfig.py"
+  "/home/alex/Blind_sight/devel/share/pcl_tutorial/docs/controlling_point_nodeConfig.wikidoc"
 )
 
 # Per-language clean rules from dependency scanning.

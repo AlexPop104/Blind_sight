@@ -1,0 +1,15 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pcl_tutorial" pkg="pcl_tutorial" type="pcl_tutorial">
+  <param name="dimension_scale" type="double" value="1.0" />
+  <param name="x_translation" type="double" value="0.0" />
+  <param name="y_translation" type="double" value="0.0" />
+  <param name="z_translation" type="double" value="0.0" />
+  <param name="point_movement_speed" type="double" value="1.0" />
+  <param name="point_x_translation" type="double" value="0.0" />
+  <param name="point_y_translation" type="double" value="0.0" />
+  <param name="point_z_translation" type="double" value="0.0" />
+  <param name="proximity_threshold" type="double" value="1.0" />
+</node>
+\endverbatim
+

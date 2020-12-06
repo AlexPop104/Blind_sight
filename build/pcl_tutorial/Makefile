@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+pcl_tutorial/CMakeFiles/controlling_point_node.dir/rule:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f CMakeFiles/Makefile2 pcl_tutorial/CMakeFiles/controlling_point_node.dir/rule
+.PHONY : pcl_tutorial/CMakeFiles/controlling_point_node.dir/rule
+
+# Convenience name for target.
+controlling_point_node: pcl_tutorial/CMakeFiles/controlling_point_node.dir/rule
+
+.PHONY : controlling_point_node
+
+# fast build rule for target.
+controlling_point_node/fast:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/controlling_point_node.dir/build.make pcl_tutorial/CMakeFiles/controlling_point_node.dir/build
+.PHONY : controlling_point_node/fast
+
+# Convenience name for target.
 pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/rule:
 	cd /home/alex/Blind_sight/build && $(MAKE) -f CMakeFiles/Makefile2 pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/rule
 .PHONY : pcl_tutorial/CMakeFiles/passthrough_filter_node_zoom.dir/rule
@@ -827,6 +842,33 @@ tf2_msgs_generate_messages_lisp/fast:
 	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make pcl_tutorial/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 .PHONY : tf2_msgs_generate_messages_lisp/fast
 
+src/controlling_point_node.o: src/controlling_point_node.cpp.o
+
+.PHONY : src/controlling_point_node.o
+
+# target to build an object file
+src/controlling_point_node.cpp.o:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/controlling_point_node.dir/build.make pcl_tutorial/CMakeFiles/controlling_point_node.dir/src/controlling_point_node.cpp.o
+.PHONY : src/controlling_point_node.cpp.o
+
+src/controlling_point_node.i: src/controlling_point_node.cpp.i
+
+.PHONY : src/controlling_point_node.i
+
+# target to preprocess a source file
+src/controlling_point_node.cpp.i:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/controlling_point_node.dir/build.make pcl_tutorial/CMakeFiles/controlling_point_node.dir/src/controlling_point_node.cpp.i
+.PHONY : src/controlling_point_node.cpp.i
+
+src/controlling_point_node.s: src/controlling_point_node.cpp.s
+
+.PHONY : src/controlling_point_node.s
+
+# target to generate assembly for a file
+src/controlling_point_node.cpp.s:
+	cd /home/alex/Blind_sight/build && $(MAKE) -f pcl_tutorial/CMakeFiles/controlling_point_node.dir/build.make pcl_tutorial/CMakeFiles/controlling_point_node.dir/src/controlling_point_node.cpp.s
+.PHONY : src/controlling_point_node.cpp.s
+
 src/passthrough_filter_node.o: src/passthrough_filter_node.cpp.o
 
 .PHONY : src/passthrough_filter_node.o
@@ -997,6 +1039,7 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... edit_cache"
+	@echo "... controlling_point_node"
 	@echo "... passthrough_filter_node_zoom"
 	@echo "... zoom_in_node"
 	@echo "... trianglemesh_node"
@@ -1046,6 +1089,9 @@ help:
 	@echo "... install/strip"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... src/controlling_point_node.o"
+	@echo "... src/controlling_point_node.i"
+	@echo "... src/controlling_point_node.s"
 	@echo "... src/passthrough_filter_node.o"
 	@echo "... src/passthrough_filter_node.i"
 	@echo "... src/passthrough_filter_node.s"

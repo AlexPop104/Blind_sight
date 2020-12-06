@@ -1,0 +1,14 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~dimension_scale" : \b [double] Nr_points_input_pointcloud min: 0.0, default: 1.0, max: 100.0
+- \b "~x_translation" : \b [double] X axis Translation min: -50.0, default: 0.0, max: 50.0
+- \b "~y_translation" : \b [double] Y axis Translation min: -50.0, default: 0.0, max: 50.0
+- \b "~z_translation" : \b [double] Z axis Translation min: -50.0, default: 0.0, max: 50.0
+- \b "~point_movement_speed" : \b [double] Point movement speed min: 0.0, default: 1.0, max: 100.0
+- \b "~point_x_translation" : \b [double] Point X axis Translation min: -50.0, default: 0.0, max: 50.0
+- \b "~point_y_translation" : \b [double] Point Y axis Translation min: -50.0, default: 0.0, max: 50.0
+- \b "~point_z_translation" : \b [double] Point Z axis Translation min: -50.0, default: 0.0, max: 50.0
+- \b "~proximity_threshold" : \b [double] Proximity threshold min: 0.0, default: 1.0, max: 100.0
+

@@ -2,6 +2,7 @@
 bf280daf20988e4be38214ca71640893 /home/alex/Blind_sight/devel/include/openni2_camera/GetSerial.h
 da30d150b982d28a3a9707e3f81d8cb6 /home/alex/Blind_sight/devel/include/openni2_camera/OpenNI2Config.h
 afc34de1c8a59c72acf28c01c465a80b /home/alex/Blind_sight/devel/include/pcl_tutorial/compute_volume_nodeConfig.h
+12db910914bc21db0f47b4f8463a67f2 /home/alex/Blind_sight/devel/include/pcl_tutorial/controlling_point_nodeConfig.h
 866b5b50d390324ad1eec5c72b03ed41 /home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_nodeConfig.h
 cecfed4af919ddde57cabe24ed08d143 /home/alex/Blind_sight/devel/include/pcl_tutorial/passthrough_filter_node_zoomConfig.h
 ab5756c212a30d3ea433e96a311e70f6 /home/alex/Blind_sight/devel/include/pcl_tutorial/plane_segmentation_nodeConfig.h

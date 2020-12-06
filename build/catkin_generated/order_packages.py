@@ -2,4 +2,4 @@
 source_root_dir = '/home/alex/Blind_sight/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/alex/Blind_sight/devel;/opt/ros/melodic'.split(';') if '/home/alex/Blind_sight/devel;/opt/ros/melodic' != '' else []
+underlay_workspaces = '/opt/ros/melodic'.split(';') if '/opt/ros/melodic' != '' else []

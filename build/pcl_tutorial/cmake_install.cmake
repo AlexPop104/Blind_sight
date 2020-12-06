@@ -58,6 +58,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pcl_tutorial" TYPE FILE FILES "/home/alex/Blind_sight/devel/include/pcl_tutorial/controlling_point_nodeConfig.h")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/pcl_tutorial" TYPE FILE FILES "/home/alex/Blind_sight/devel/lib/python2.7/dist-packages/pcl_tutorial/__init__.py")
 endif()
 

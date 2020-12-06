@@ -1182,6 +1182,19 @@ nodelet_generate_messages_nodejs/fast:
 .PHONY : nodelet_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named controlling_point_node
+
+# Build rule for target.
+controlling_point_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controlling_point_node
+.PHONY : controlling_point_node
+
+# fast build rule for target.
+controlling_point_node/fast:
+	$(MAKE) -f pcl_tutorial/CMakeFiles/controlling_point_node.dir/build.make pcl_tutorial/CMakeFiles/controlling_point_node.dir/build
+.PHONY : controlling_point_node/fast
+
+#=============================================================================
 # Target rules for targets named passthrough_filter_node_zoom
 
 # Build rule for target.
@@ -2026,6 +2039,7 @@ help:
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... nodelet_generate_messages_eus"
 	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... controlling_point_node"
 	@echo "... passthrough_filter_node_zoom"
 	@echo "... zoom_in_node"
 	@echo "... trianglemesh_node"
