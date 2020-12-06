@@ -29,6 +29,7 @@ public:
     pub1_ = nh_.advertise<sensor_msgs::PointCloud2>("/Two_points", 1);
     pub2_ = nh_.advertise<sensor_msgs::PointCloud2>("/One_point", 1);
     pub3_ = nh_.advertise<sensor_msgs::PointCloud2>("/Proximity_points", 1);
+    vis_pub = nh_.advertise<visualization_msgs::Marker>("/Mesaj_final", 0);
     sub_ = nh_.subscribe("/pf_zoom_out", 1, &ControllingPointNode::cloudCallback, this);
 
     config_server_.setCallback(boost::bind(&ControllingPointNode::dynReconfCallback, this, _1, _2));
@@ -70,13 +71,37 @@ public:
     pcl::transformPointCloud(*cloud_puncte, *transformed_cloud, transform);
   }
 
+   void
+  set_marker(visualization_msgs::Marker &marker)
+  {
+      marker.header.stamp = ros::Time::now();
+      marker.pose.position.x = 1;
+      marker.type = visualization_msgs::Marker::TEXT_VIEW_FACING;
+      marker.action = visualization_msgs::Marker::ADD;
 
+      marker.pose.position.y = 1;
+      marker.pose.position.z = 1;
+      marker.pose.orientation.x = 0.0;
+      marker.pose.orientation.y = 0.0;
+      marker.pose.orientation.z = 0.0;
+      marker.pose.orientation.w = 1.0;
+      marker.scale.x = 1;
+      marker.scale.y = 0.1;
+      marker.scale.z = 0.1;
+      marker.color.a = 1.0; // Don't forget to set the alpha! Otherwise it is invisible
+      marker.color.r = 0.0;
+      marker.color.g = 1.0;
+      marker.color.b = 0.0;
+      marker.lifetime = ros::Duration();
+  }
 
   void check_distance(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud,
                       pcl::PointCloud<pcl::PointXYZ>::Ptr Controller_point,
                       pcl::PointCloud<pcl::PointXYZ> &final_pointcloud,
+                      bool &ok_prox,
                       double proximity_threshold)
-  {
+  { 
+    ok_prox=0;
     double dist_x;
     double dist_y;
     double dist_z;
@@ -94,7 +119,7 @@ public:
 
       if (dist_finala<proximity_threshold)
       {
-
+          ok_prox=1;
          int N=final_pointcloud.width;
 
           final_pointcloud.width=final_pointcloud.width+1;
@@ -117,6 +142,8 @@ public:
   void
   cloudCallback(const sensor_msgs::PointCloud2ConstPtr &cloud_msg)
   {
+    bool ok_prox;
+
     pcl::PointCloud<pcl::PointXYZ> cloud_Test;
     pcl::fromROSMsg(*cloud_msg, cloud_Test);
 
@@ -187,17 +214,13 @@ public:
     cloud_proximitate.is_dense = false;
     cloud_proximitate.resize(cloud_proximitate.width * cloud_proximitate.height);
 
-/*
-    cloud_proximitate.points[0].x = 5;
-    cloud_proximitate.points[0].y =5;
-    cloud_proximitate.points[0].z = 5;
 
-    */
 
     
     check_distance(cloudPTR,
                    transformed_cloud_2,
                    cloud_proximitate,
+                   ok_prox,
                    proximity_threshold
                    );
 
@@ -216,9 +239,30 @@ public:
     tempROSMsg2.header.frame_id = "camera_depth_optical_frame";
     tempROSMsg3.header.frame_id = "camera_depth_optical_frame";
 
+
+     std::stringstream ss;
+
+     if (ok_prox)
+     {
+        ss << "Da, sunt puncte in apropiere";
+     }
+     else
+     {
+        ss << "Nu sunt puncte in apropiere";
+     }
+
+    
+
+    visualization_msgs::Marker marker;
+    marker.header.frame_id = "camera_depth_optical_frame";
+    marker.text = ss.str();
+    set_marker(marker);
+
     pub1_.publish(tempROSMsg);
     pub2_.publish(tempROSMsg2);
     pub3_.publish(tempROSMsg3);
+
+    vis_pub.publish(marker);
   }
 
 private:
@@ -227,6 +271,7 @@ private:
   ros::Publisher pub1_;
   ros::Publisher pub2_;
    ros::Publisher pub3_;
+   ros::Publisher vis_pub;
   dynamic_reconfigure::Server<pcl_tutorial::controlling_point_nodeConfig> config_server_;
 
   double dimension_scale;
