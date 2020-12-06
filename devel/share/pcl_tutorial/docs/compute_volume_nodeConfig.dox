@@ -1,0 +1,9 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~nr_points_initial" : \b [double] Nr_points_input_pointcloud min: 0.0, default: 100.0, max: 20000.0
+- \b "~dividing_number" : \b [double] Nr_points_input_pointcloud min: 1.0, default: 3.0, max: 100.0
+- \b "~perpendicular_threshold" : \b [double] Nr_points_input_pointcloud min: 0.001, default: 0.01, max: 1.0
+- \b "~parallel_threshold" : \b [double] Nr_points_input_pointcloud min: 0.001, default: 0.01, max: 1.0
+

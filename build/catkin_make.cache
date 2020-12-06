@@ -1,0 +1,2 @@
+openni2/openni2_camera:openni2/openni2_launch:pcl_tutorial:pico_zense_camera
+-DCATKIN_DEVEL_PREFIX=/home/alex/Blind_sight/devel -DCMAKE_INSTALL_PREFIX=/home/alex/Blind_sight/install -G Unix Makefiles
